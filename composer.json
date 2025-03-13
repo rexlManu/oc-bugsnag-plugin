@@ -1,11 +1,11 @@
 {
-    "name": "vojtasvoboda/bugsnag",
+    "name": "rexlmanu/bugsnag",
     "type": "october-plugin",
     "extra": {
         "installer-name": "bugsnag"
     },
     "description": "Bugsnag connector.",
-    "homepage": "https://github.com/vojtasvoboda/oc-bugsnag-plugin",
+    "homepage": "https://github.com/rexlmanu/oc-bugsnag-plugin",
     "keywords": ["october", "plugin", "bugsnag"],
     "license": "MIT",
     "authors": [
@@ -16,15 +16,20 @@
         }
     ],
     "require": {
-        "php": "^5.6 | ^7.0",
+        "php": "^8.2",
         "composer/installers": "~1.0",
         "bugsnag/bugsnag": "^3.4",
-        "mead-steve/mono-snag": "^3.0.0"
+        "mead-steve/mono-snag": "^4.0"
     },
     "minimum-stability": "stable",
     "scripts": {
         "build": [
             "@composer install --no-progress --no-interaction --no-suggest"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
