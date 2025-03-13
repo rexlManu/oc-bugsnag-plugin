@@ -28,7 +28,8 @@ class Plugin extends PluginBase
     public function boot()
     {
         // register Bugsnag handler
-        $monolog = Log::getMonolog();
+        $isLaravel56OrUp = method_exists(\Illuminate\Log\Logger::class, 'getLogger');
+        $monolog = $isLaravel56OrUp ? Log::getLogger() : Log::getMonolog();
         $this->setBugsnagHandler($monolog);
 
         // extend ErrorLogger settings form
