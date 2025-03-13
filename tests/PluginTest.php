@@ -1,4 +1,4 @@
-<?php namespace VojtaSvoboda\BugSnag\Tests;
+<?php namespace RexlManu\BugSnag\Tests;
 
 use PluginTestCase;
 

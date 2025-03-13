@@ -1,4 +1,4 @@
-<?php namespace VojtaSvoboda\BugSnag;
+<?php namespace RexlManu\BugSnag;
 
 use Backend;
 use Bugsnag\Client;
