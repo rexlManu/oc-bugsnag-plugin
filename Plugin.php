@@ -18,8 +18,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'vojtasvoboda.bugsnag::lang.plugin.name',
-            'description' => 'vojtasvoboda.bugsnag::lang.plugin.description',
+            'name' => 'rexlmanu.bugsnag::lang.plugin.name',
+            'description' => 'rexlmanu.bugsnag::lang.plugin.description',
             'author' => 'Vojta Svoboda',
             'icon' => 'icon-bug',
         ];
@@ -40,14 +40,14 @@ class Plugin extends PluginBase
 
             $widget->addTabFields([
                 'bugsnag_enabled' => [
-                    'tab' => 'vojtasvoboda.bugsnag::lang.tab.name',
-                    'label' => 'vojtasvoboda.bugsnag::lang.fields.bugsnag_enabled.label',
+                    'tab' => 'rexlmanu.bugsnag::lang.tab.name',
+                    'label' => 'rexlmanu.bugsnag::lang.fields.bugsnag_enabled.label',
                     'type' => 'switch',
                 ],
                 'bugsnag_api_key' => [
-                    'tab' => 'vojtasvoboda.bugsnag::lang.tab.name',
-                    'label' => 'vojtasvoboda.bugsnag::lang.fields.bugsnag_api_key.label',
-                    'comment' => 'vojtasvoboda.bugsnag::lang.fields.bugsnag_api_key.comment',
+                    'tab' => 'rexlmanu.bugsnag::lang.tab.name',
+                    'label' => 'rexlmanu.bugsnag::lang.fields.bugsnag_api_key.label',
+                    'comment' => 'rexlmanu.bugsnag::lang.fields.bugsnag_api_key.comment',
                     'required' => true,
                     'trigger' => [
                         'action' => 'show',
